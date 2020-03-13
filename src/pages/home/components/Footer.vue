@@ -4,10 +4,12 @@
       <span class="footer-icon iconfont">&#xe62b;</span>
       <p class="footer-text">明细</p>
     </div>
-    <div class="footer-edit">
-      <span class="footer-icon iconfont">&#xe617;</span>
-      <p class="footer-text">记账</p>
-    </div>
+    <router-link to="/category">
+      <div class="footer-edit">
+        <span class="footer-icon iconfont">&#xe617;</span>
+        <p class="footer-text">记账</p>
+      </div>
+    </router-link>
     <div class="footer-right"> 
       <span class="footer-icon iconfont">&#xe743;</span>
       <p class="footer-text">图表</p>
@@ -36,8 +38,9 @@ export default {
     padding-top .1rem
    
     box-sizing border-box
+    .footer-edit
+        color #fff
     .footer-text
-        
         padding-top .2rem
     .footer-icon
         padding-left .05rem
